@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +9,407 @@
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-   
+    <section class="top-line">
+        <div class="container">
+            <div class="top-line__inner">
+                <div class="top-line__text">
+                    You have 1 expired deadline and 11 deadlines expires soon.
+                </div>
+                <a class="top-line__link" href="#">
+                    View To-Do List
+                </a>
+            </div>
+        </div>
+        <div class="top-line__close-btn">
+            <img src="images/icon-close.svg" alt="#">
+        </div>
+    </section>
 
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <img class="logo" src="images/logo.png" alt="#">
+                <nav class="menu">
+                    <ul class="menu-list">
+                        <li class="menu-list__item">
+                            <a href="#">
+                                News
+                            </a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="#">
+                                Events
+                            </a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="#">
+                                My Classes
+                            </a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="#">
+                                My Cases
+                            </a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="#">
+                                My Finances
+                            </a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="#">
+                                My to-do list
+                            </a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="#">
+                                My appointments
+                            </a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="#">
+                                My Documents
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="notify">
+                <!-- <div class="notify notify--no"> -->
+                    <div class="notify__btn">
+                        <img src="images/icon-notify.svg" alt="#">
+                        <span class="notify__count">12</span>
+                    </div>
+                    <div class="notify__dropdown">
+                        <a class="notify__top-line" href="#">
+                            <span>Notifications</span>
+                            <span>12</span>
+                        </a>
+                        <span class="notify__top-line notify__top--no">
+                            No notifications
+                        </span>
+                        <ul class="notify__list">
+                            <li>
+                                <a class="notify__item notify__item--new" href="#">Library Hold!</a>
+                            </li>
+                            <li>
+                                <a class="notify__item" href="#">Past Due Account</a>
+                            </li>
+                            <li>
+                                <a class="notify__item" href="#">Probation</a>
+                            </li>
+                            <li>
+                                <a class="notify__item" href="#">Past Due Account</a>
+                            </li>
+                            <li>
+                                <a class="notify__item" href="#">Probation</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="user__img">
+                        <img src="images/user.png" alt="#">
+                    </div>
+                    <ul class="user__dropdown">
+                        <li>
+                            <a class="user__dropdown-item" href="#">My Account</a>
+                        </li>
+                        <li>
+                            <a class="user__dropdown-item" href="#">User Settings</a>
+                        </li>
+                        <li>
+                            <a class="user__dropdown-item" href="#">User Profile</a>
+                        </li>
+                        <li>
+                            <a class="user__dropdown-item" href="#">Contact Support</a>
+                        </li>
+                        <li>
+                            <a class="user__dropdown-item" href="#">News</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-btn">
+                    <!-- <div class="menu-btn__line menu-btn__line-one"></div> -->
+                    <!-- <div class="menu-btn__line menu-btn__line-two"></div> -->
+                </div>
+            </div>
+        </div>
+    </header>
 
-    
+    <section class="search">
+        <div class="container">
+            <div class="search__inner">
+                <h2 class="search__title">
+                    Welcome to Student Hub
+                </h2>
+                <form class="search__form">
+                    <input class="search__input" type="text" required>
+                    <button class="search__btn" type="submit"></button>
+                </form>
+            </div>
+        </div>
+    </section>
 
+    <section class="tools">
+        <div class="container">
+            <div class="tools__inner">
+                <div class="tools__line">
+                    <a class="tools__item" data-fancybox data-src="#popup" href="javascript:;">
+                        My Classes
+                    </a>
+                    <a class="tools__item" data-fancybox data-src="#popup" href="javascript:;">
+                        My Cases
+                    </a>
+                    <a class="tools__item" data-fancybox data-src="#popup" href="javascript:;">
+                        My Finances
+                    </a>
+                </div>
+                <div class="tools__line">
+                    <a class="tools__item" data-fancybox data-src="#popup" href="javascript:;">
+                        My To-Do List
+                    </a>
+                    <a class="tools__item" data-fancybox data-src="#popup" href="javascript:;">
+                        My Appointments
+                    </a>
+                    <a class="tools__item" data-fancybox data-src="#popup" href="javascript:;">
+                        My Documents
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    
+    <section class="events">
+        <div class="container">
+            <div class="events__inner">
+                <div class="events__top section__top">
+                    <h2 class="events__title section__title">
+                        Upcoming Events
+                    </h2>
+                    <a class="events__link section__link" href="#">
+                        View all Events
+                    </a>
+                </div>
+                <div class="events__slider">
+                    <div class="events__item">
+                        <h6 class="events__item-title">
+                            Time Management Student Success
+                        </h6>
+                        <p class="events__item-text">
+                            Workshop
+                        </p>
+                        <p class="events__item-date">
+                            5/13/2020
+                        </p>
+                        <div class="events__item-line">
+                            <span class="events__item-time">
+                                19 PM — 22 PM
+                            </span>
+                            <img src="images/menu-dot.svg" alt="#">
+                            <span class="events__item-place">
+                                Library
+                            </span>
+                        </div>
+                    </div>
+                    <div class="events__item">
+                        <h6 class="events__item-title">
+                            Wednesday Student Wnd-Down Free Meditation
+                        </h6>
+                        <p class="events__item-text">
+                            Online talks
+                        </p>
+                        <p class="events__item-date">
+                            5/13/2020
+                        </p>
+                        <div class="events__item-line">
+                            <span class="events__item-time">
+                                19 PM — 22 PM
+                            </span>
+                            <img src="images/menu-dot.svg" alt="#">
+                            <span class="events__item-place">
+                                Library
+                            </span>
+                        </div>
+                    </div>
+                    <div class="events__item">
+                        <h6 class="events__item-title">
+                            Staying job ready after Covid-19
+                        </h6>
+                        <p class="events__item-text">
+                            Online talks
+                        </p>
+                        <p class="events__item-date">
+                            5/13/2020
+                        </p>
+                        <div class="events__item-line">
+                            <span class="events__item-time">
+                                19 PM — 22 PM
+                            </span>
+                            <img src="images/menu-dot.svg" alt="#">
+                            <span class="events__item-place">
+                                Library
+                            </span>
+                        </div>
+                    </div>
+                    <div class="events__item">
+                        <h6 class="events__item-title">
+                            Staying job ready after Covid-19
+                        </h6>
+                        <p class="events__item-text">
+                            Online talks
+                        </p>
+                        <p class="events__item-date">
+                            5/13/2020
+                        </p>
+                        <div class="events__item-line">
+                            <span class="events__item-time">
+                                19 PM — 22 PM
+                            </span>
+                            <img src="images/menu-dot.svg" alt="#">
+                            <span class="events__item-place">
+                                Library
+                            </span>
+                        </div>
+                    </div>
+                    <div class="events__item">
+                        <h6 class="events__item-title">
+                            Staying job ready after Covid-19
+                        </h6>
+                        <p class="events__item-text">
+                            Online talks
+                        </p>
+                        <p class="events__item-date">
+                            5/13/2020
+                        </p>
+                        <div class="events__item-line">
+                            <span class="events__item-time">
+                                19 PM — 22 PM
+                            </span>
+                            <img src="images/menu-dot.svg" alt="#">
+                            <span class="events__item-place">
+                                Library
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="container">
+            <div class="news__inner">
+                <div class="news__top section__top">
+                    <h2 class="news__title section__title">
+                        News
+                    </h2>
+                    <a class="news__link section__link" href="#">
+                        View all News
+                    </a>
+                </div>
+                <div class="news__list">
+                    <div class="news__item">
+                        <div class="news__item-img">
+                            <img src="images/news-img-1.jpg" alt="#">
+                        </div>
+                        <p class="news__item-category">
+                            Feature
+                        </p>
+                        <a class="news__item-title" href="#">
+                            When is Wakanda: Professors, alumni partner with Oakland museum to host Afrofuturism...
+                        </a>
+                        <p class="news__item-date">
+                            May 3, 2020
+                        </p>
+                    </div>
+                    <div class="news__item">
+                        <div class="news__item-img">
+                            <img src="images/news-img-2.jpg" alt="#">
+                        </div>
+                        <p class="news__item-category">
+                            Feature
+                        </p>
+                        <a class="news__item-title"  href="#">
+                            A Holistic Approach to Student Advising
+                        </a>
+                        <p class="news__item-date">
+                            May 3, 2020
+                        </p>
+                    </div>
+                    <div class="news__item">
+                        <div class="news__item-img">
+                            <img src="images/news-img-3.jpg" alt="#">
+                        </div>
+                        <p class="news__item-category">
+                            Feature
+                        </p>
+                        <a class="news__item-title" href="#">
+                            Cal State East Bay faculty, students spend month in Okinawa capturing histories
+                        </a>
+                        <p class="news__item-date">
+                            May 3, 2020
+                        </p>
+                    </div>
+                </div>
+                <a class="news__more" href="#">More News</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-top__inner">
+                    <img class="logo" src="images/logo.png" alt="#">
+                    <div class="footer__info">
+                        <p class="footer__address">25800 Carlos Bee Boulevard | Hayward, CA 94542</p>
+                        <a class="footer__phone" href="tel:5108853000">
+                            510-885-3000
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom__inner">
+                    <div class="footer__rights">
+                        © 2020 California State University, East Bay. All rights reserved.
+                    </div>
+                    <div class="footer__social">
+                        <a class="footer__social-link" href="#">Facebook</a>
+                        <a class="footer__social-link" href="#">Twitter</a>
+                        <a class="footer__social-link" href="#">Instagram</a>
+                        <a class="footer__social-link" href="#">Pinterest</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="popup" id="popup">
+        <div class="popup__title">
+            <img src="images/icon-popup.svg" alt="#">
+            <span>Action</span>            
+        </div>
+        <p class="popup__text">
+            Please pay overdue account balance to restore registration access and university services. 
+        </p>       
+        <p class="popup__text">           
+            View your account balance online through MyCSUEB. 
+            
+        </p>  
+        <p class="popup__text">            
+            Contact Student Financial Services at  (510-885-3767) if you have any questions.
+        </p>   
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
-    <script src="js/main.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
