@@ -8,6 +8,25 @@ $(document).ready(function () {
         // infinite: false,
         prevArrow: '<button class="arrow_slider arrow_slider_prev"><img src="images/slider-arrow-prev.svg" alt=""></button>',
         nextArrow: '<button class="arrow_slider arrow_slider_next"><img src="images/slider-arrow-next.svg" alt=""></button>',
+        responsive: [{
+            breakpoint: 970,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        // {
+        //     breakpoint: 550,
+        //     settings: {
+        //         slidesToShow: 1,
+        //     }
+        // },
+        // {
+        //     breakpoint: 740,
+        //     settings: {
+        //         slidesToShow: 2,
+        //     }
+        // },
+        ]
     });
 
     // Закрытие top-line:

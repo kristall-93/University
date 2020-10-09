@@ -394,7 +394,6 @@ a.notify__top-line:hover {
     font-weight: bold;
     font-size: 36px;
     line-height: 47px;
-    letter-spacing: 0.03em;
     color: #d50005;
 }
 .section__link,
@@ -493,6 +492,9 @@ a.notify__top-line:hover {
 }
 .news__item-img {
     margin-bottom: 30px;
+    img{
+        width: 100%;
+    }
 }
 .news__item-category {
     margin-bottom: 10px;
@@ -572,6 +574,7 @@ a.notify__top-line:hover {
 // start popup
 
 .popup {
+    display: none;
     max-width: 600px;
     width: 100%;
     padding: 30px 30px 40px;
