@@ -80,6 +80,42 @@
     }
 }
 @media (max-width: 800px) {
+    .todo__inner {
+        margin-top: 40px;
+        margin-bottom: 80px;
+    }
+    .todo__item{
+        width: 100%;
+        margin: 0 auto 20px;
+        padding: 20px;
+    }
+    .todo__top{
+        flex-wrap: wrap;
+    }
+    .todo__title {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .todo__filter-btn{
+        margin-left: 0;
+        margin-right: 36px;
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .tab{
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .todo__item-category,
+    .todo__item-label,
+    .todo__more{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .todo__item-title{
+        font-size: 18px;
+        line-height: 24px;
+    }
     .section__title,
     .events__title {
         font-size: 30px;
@@ -282,6 +318,12 @@
         box-shadow: none;
         margin-left: 0;
         margin-right: 30px;
+    }
+    .todo__item-bottom span{
+        display: none;
+    }
+    .todo__item-bottom span.todo__item-date{
+        display: block;
     }
 }
 @media (max-width: 400px) {

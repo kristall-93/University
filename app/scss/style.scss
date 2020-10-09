@@ -233,22 +233,10 @@ a.notify__top-line:hover {
     background-repeat: no-repeat;
     background-position: center;
     &:hover {
-        // .menu-btn__line {
-        //     background: #131313;
-        // }
-        opacity: .7;
+        opacity: 0.7;
     }
-    &.active{
-    background-image: url(../images/menu-btn-active.svg);
-
-        .menu-btn__line-one{
-            transform: rotate(30deg);
-            // transform: translateY(2px);
-        }
-        .menu-btn__line-two{
-            transform: rotate(-30deg);
-            // transform: translateY(-2px);
-        }
+    &.active {
+        background-image: url(../images/menu-btn-active.svg);
     }
 }
 .menu-btn__line {
@@ -256,7 +244,7 @@ a.notify__top-line:hover {
     height: 2px;
     background: #d0d0d0;
     border-radius: 2px;
-    transition: all .3s;
+    transition: all 0.3s;
 }
 .menu-btn__line-two {
     margin-top: 6px;
@@ -492,7 +480,7 @@ a.notify__top-line:hover {
 }
 .news__item-img {
     margin-bottom: 30px;
-    img{
+    img {
         width: 100%;
     }
 }
@@ -573,7 +561,8 @@ a.notify__top-line:hover {
 // end footer
 // start popup
 
-.popup {
+.popup,
+.popup-2 {
     display: none;
     max-width: 600px;
     width: 100%;
@@ -629,5 +618,161 @@ a.notify__top-line:hover {
 // end popup
 
 // end main page
+
+// start todo page
+
+.todo__inner {
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+.todo__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.todo__filter-btn {
+    margin-left: 30px;
+    font-family: "Whitney-Light", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+    color: #7a7a7a;
+    background: transparent;
+    transition: all 0.3s;
+    &:hover {
+        color: #d50005;
+    }
+}
+.tabs {
+    margin-bottom: 30px;
+}
+.tab {
+    height: 39px;
+    padding: 8px 20px;
+    margin-right: 20px;
+    border: 2px solid #d0d0d0;
+    border-radius: 10px;
+    font-family: "Whitney-Light", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+    cursor: pointer;
+    transition: all 0.3s;
+    background: transparent;
+    &:hover,
+    &.active {
+        color: #d50005;
+        border: 2px solid #d50005;
+    }
+}
+.tab-item {
+    display: none;
+    &:first-child {
+        display: block;
+    }
+}
+.todo__list-admissions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.todo__item {
+    max-width: 560px;
+    width: 49%;
+    padding: 25px 30px 30px;
+    border: 1px solid #ededed;
+    box-shadow: 0px 15px 50px rgba(152, 152, 152, 0.1);
+    border-radius: 20px;
+    margin-bottom: 35px;
+    &:hover{
+        border: 1px solid #d50005;
+    }
+    &.todo__item--expired {
+        .todo__item-label--expired {
+            display: block;
+        }
+        .todo__item-date{
+            background: #ededed;
+        }
+        .todo__item-category{
+            color: #131313;
+        }
+    }
+    &.todo__item--expiredsoon {
+        .todo__item-label--expiredsoon {
+            display: block;
+        }
+    }
+}
+.todo__item-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.todo__item-category {
+    font-family: "Whitney-Light", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+    margin-right: auto;
+    color: #D50005;
+}
+.todo__item-label {
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+    border-radius: 15px;
+    padding: 4px 14px;
+    letter-spacing: 0.03em;
+    display: none;
+    &.todo__item-label--expired {
+        background: #131313;
+    }
+    &.todo__item-label--expiredsoon {
+        background: #d50005;
+    }
+}
+.todo__item-title {
+    font-family: "Whitney-Bold", sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.todo__item-bottom {
+    font-family: "Whitney-Light", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    img {
+        margin-right: 20px;
+    }
+    span {
+        line-height: 23px;
+        color: #7a7a7a;
+        margin-right: 20px;
+        &.todo__item-date {
+            line-height: 24px;
+            color: #131313;
+            border-radius: 15px;
+            padding: 4px 15px;
+            background: #f6cacb;
+        }
+    }
+}
+.todo__more{
+    margin-top: 25px;
+}
+
+// popup-2
+
+.popup__name{
+    font-family: 'Whitney-Bold', sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+// end todo page
 
 @import "_media";
