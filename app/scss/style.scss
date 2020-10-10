@@ -44,13 +44,38 @@
 .logo {
     margin-right: 35px;
 }
+.menu{
+    &.active {
+        display: block;
+        animation: slidein 0.5s forwards ease-in-out;
+    }
+    &.hidden {
+        display: block;
+        animation: slideout 0.5s forwards ease-in-out;
+    }
+}
+@keyframes slidein {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+@keyframes slideout {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
 .menu-list__item {
     display: inline-block;
     font-family: "Whitney-Light", sans-serif;
     font-weight: 300;
     font-size: 14px;
     line-height: 18px;
-    // letter-spacing: 0.05em;
     text-transform: uppercase;
     & + .menu-list__item {
         position: relative;
@@ -238,16 +263,6 @@ a.notify__top-line:hover {
     &.active {
         background-image: url(../images/menu-btn-active.svg);
     }
-}
-.menu-btn__line {
-    width: 30px;
-    height: 2px;
-    background: #d0d0d0;
-    border-radius: 2px;
-    transition: all 0.3s;
-}
-.menu-btn__line-two {
-    margin-top: 6px;
 }
 
 // end header
